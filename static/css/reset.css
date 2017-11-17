@@ -1,0 +1,132 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    /*font-family: "Microsoft Yahei",sans-serif;*/
+    font-family: PingFangSC-Light, sans-serif;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-size: 0.12rem;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom */
+a {
+    color: #7e8c8d;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+html{
+    font-size: 100px;
+    height: 100%;
+    /*background:#ebf0f0;*/
+    /*百分百撑起高度*/
+}
+@media screen and (max-width:374px){html{font-size:85.6px}}
+@media screen and (min-width:375px) and (max-width:413px){html{font-size:100px}}
+@media screen and (min-width:414px) and (max-width:639px){html{font-size:110.7px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:170px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:192px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:200px}}
+@media screen and (min-width:800px){html{font-size:213px}}
+body{
+    margin:0;
+    -webkit-font-smoothing:antialiased;
+    font-size: 0.16rem;
+    margin: 0;
+    padding: 0;
+    /*font-family: -apple-system, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;*/
+    color:#404040;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+@font-face {
+    font-family: PingFang-SC-Semibold;
+    src: url("./fonts/PingFang-SC-Semibold.ttf");
+}
+
+@font-face {
+    font-family: PingFangSC-Regular ;
+    src: url("./fonts/PingFang_Regular.otf");
+}
+.mint-switch-input:checked + .mint-switch-core{
+    background-color: #c6c6c9;
+    border: none;
+}
+.mintui-back{
+    color: #fff!important;
+}
+.mint-navbar .mint-tab-item.is-selected {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
